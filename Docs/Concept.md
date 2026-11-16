@@ -4,7 +4,7 @@
 
 - Adapter name (technical): `zentra`. ioBroker requires lowercase adapter names. This name is used for the package `iobroker.zentra`, the repository `ioBroker.zentra` and the instance IDs `zentra.0`.
 - Display title (`common.titleLang`): **ZENTRA**
-- Icon (`admin/zentra.png`, 150×150 px): the METER Group logo mark, taken from the ZENTRA Cloud help center (`files.helpdocs.io/la7ra8dc1e/logo.png`).
+- Icon (`admin/zentra.png`, 512×512 px): the official METER Group logo mark, scaled down from `Docs/assets/meter-logo-1024.png`. That source file is not shipped in the package.
 
 ## Goal
 

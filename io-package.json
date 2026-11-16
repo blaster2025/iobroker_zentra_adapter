@@ -1,8 +1,12 @@
 {
 	"common": {
 		"name": "zentra",
-		"version": "0.0.1",
+		"version": "0.0.2",
 		"news": {
+			"0.0.2": {
+				"en": "Official METER Group logo as adapter icon",
+				"de": "Offizielles METER-Group-Logo als Adapter-Icon"
+			},
 			"0.0.1": {
 				"en": "initial release",
 				"de": "Erstveröffentlichung",
@@ -61,8 +65,8 @@
 		"platform": "Javascript/Node.js",
 		"icon": "zentra.png",
 		"enabled": true,
-		"extIcon": "https://raw.githubusercontent.com/your-github-name/ioBroker.zentra/main/admin/zentra.png",
-		"readme": "https://github.com/your-github-name/ioBroker.zentra/blob/main/README.md",
+		"extIcon": "https://raw.githubusercontent.com/blaster2025/iobroker_zentra_adapter/main/admin/zentra.png",
+		"readme": "https://github.com/blaster2025/iobroker_zentra_adapter/blob/main/README.md",
 		"loglevel": "info",
 		"tier": 3,
 		"mode": "daemon",

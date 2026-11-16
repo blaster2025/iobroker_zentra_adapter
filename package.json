@@ -1,13 +1,13 @@
 {
   "name": "iobroker.zentra",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Pulls measurement data from METER Group ZENTRA Cloud devices",
   "author": {
     "name": "METER Group",
     "email": "your.email@example.com"
   },
   "contributors": [],
-  "homepage": "https://github.com/your-github-name/ioBroker.zentra",
+  "homepage": "https://github.com/blaster2025/iobroker_zentra_adapter",
   "license": "MIT",
   "keywords": [
     "zentra",
@@ -19,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-github-name/ioBroker.zentra.git"
+    "url": "https://github.com/blaster2025/iobroker_zentra_adapter.git"
   },
   "engines": {
     "node": ">= 22"
@@ -71,7 +71,7 @@
     "dev-server": "dev-server"
   },
   "bugs": {
-    "url": "https://github.com/your-github-name/ioBroker.zentra/issues"
+    "url": "https://github.com/blaster2025/iobroker_zentra_adapter/issues"
   },
   "readmeFilename": "README.md"
 }
