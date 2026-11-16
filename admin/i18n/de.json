@@ -1,0 +1,14 @@
+{
+	"ZENTRA Cloud account": "ZENTRA Cloud Konto",
+	"API key": "API-Schlüssel",
+	"ZENTRA Cloud: Profile → Integrations → Show Token": "ZENTRA Cloud: Profil → Integrations → Show Token",
+	"Polling": "Abfrage",
+	"Polling interval (minutes)": "Abfrageintervall (Minuten)",
+	"Minimum 5 minutes. Loggers usually upload every 15-60 minutes.": "Mindestens 5 Minuten. Logger laden ihre Daten meist alle 15-60 Minuten hoch.",
+	"Units": "Einheiten",
+	"Metric": "Metrisch",
+	"Imperial": "Imperial",
+	"Devices": "Geräte",
+	"Enter the API key, then open the list to load the devices of your account. The adapter instance must be running.": "API-Schlüssel eingeben, dann die Liste öffnen, um die Geräte des Kontos zu laden. Die Adapterinstanz muss laufen.",
+	"Devices to poll": "Abzufragende Geräte"
+}

@@ -1,0 +1,124 @@
+{
+	"common": {
+		"name": "zentra",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"uk": "Початкова версія",
+				"zh-cn": "首次出版"
+			}
+		},
+		"titleLang": {
+			"en": "ZENTRA",
+			"de": "ZENTRA",
+			"ru": "ЗЕНТРА",
+			"pt": "ZENTRA",
+			"nl": "ZENTRA",
+			"fr": "ZENTRA",
+			"it": "ZENTRA",
+			"es": "ZENTRA",
+			"pl": "ZENTRA",
+			"uk": "ZENTRA",
+			"zh-cn": "森特拉"
+		},
+		"desc": {
+			"en": "Pulls measurement data from METER Group ZENTRA Cloud devices",
+			"de": "Ruft Messdaten von ZENTRA Cloud-Geräten der METER Group ab",
+			"ru": "Получает данные измерений с устройств METER Group ZENTRA Cloud",
+			"pt": "Extrai dados de medição de dispositivos METER Group ZENTRA Cloud",
+			"nl": "Haalt meetgegevens op van METER Group ZENTRA Cloud-apparaten",
+			"fr": "Extrait les données de mesure des appareils ZENTRA Cloud du groupe METER",
+			"it": "Estrae i dati di misurazione dai dispositivi ZENTRA Cloud di METER Group",
+			"es": "Extrae datos de medición de los dispositivos ZENTRA Cloud de METER Group",
+			"pl": "Pobiera dane pomiarowe z urządzeń METER Group ZENTRA Cloud",
+			"uk": "Отримує дані вимірювань із пристроїв METER Group ZENTRA Cloud",
+			"zh-cn": "从 METER Group ZENTRA Cloud 设备中提取测量数据"
+		},
+		"authors": [
+			"METER Group <your.email@example.com>"
+		],
+		"keywords": [
+			"zentra",
+			"zentracloud",
+			"meter group",
+			"soil moisture",
+			"weather",
+			"sensors"
+		],
+		"licenseInformation": {
+			"type": "free",
+			"license": "MIT"
+		},
+		"platform": "Javascript/Node.js",
+		"icon": "zentra.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/your-github-name/ioBroker.zentra/main/admin/zentra.png",
+		"readme": "https://github.com/your-github-name/ioBroker.zentra/blob/main/README.md",
+		"loglevel": "info",
+		"tier": 3,
+		"mode": "daemon",
+		"type": "weather",
+		"compact": true,
+		"connectionType": "cloud",
+		"dataSource": "poll",
+		"adminUI": {
+			"config": "json"
+		},
+		"dependencies": [
+			{
+				"js-controller": ">=6.0.11"
+			}
+		],
+		"globalDependencies": [
+			{
+				"admin": ">=7.0.23"
+			}
+		],
+		"messagebox": true
+	},
+	"native": {
+		"apiKey": "",
+		"pollInterval": 15,
+		"units": "metric",
+		"devices": []
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	],
+	"encryptedNative": [
+		"apiKey"
+	],
+	"protectedNative": [
+		"apiKey"
+	]
+}

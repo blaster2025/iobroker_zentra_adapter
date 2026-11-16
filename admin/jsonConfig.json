@@ -1,0 +1,89 @@
+{
+	"i18n": true,
+	"type": "panel",
+	"items": {
+		"_headerAccount": {
+			"type": "header",
+			"text": "ZENTRA Cloud account",
+			"size": 3,
+			"newLine": true
+		},
+		"apiKey": {
+			"type": "password",
+			"label": "API key",
+			"help": "ZENTRA Cloud: Profile → Integrations → Show Token",
+			"repeat": false,
+			"visible": true,
+			"newLine": true,
+			"xs": 12,
+			"sm": 12,
+			"md": 8,
+			"lg": 6,
+			"xl": 6
+		},
+		"_headerPolling": {
+			"type": "header",
+			"text": "Polling",
+			"size": 3,
+			"newLine": true
+		},
+		"pollInterval": {
+			"type": "number",
+			"label": "Polling interval (minutes)",
+			"help": "Minimum 5 minutes. Loggers usually upload every 15-60 minutes.",
+			"min": 5,
+			"max": 1440,
+			"newLine": true,
+			"xs": 12,
+			"sm": 6,
+			"md": 4,
+			"lg": 3,
+			"xl": 3
+		},
+		"units": {
+			"type": "select",
+			"label": "Units",
+			"options": [
+				{ "label": "Metric", "value": "metric" },
+				{ "label": "Imperial", "value": "imperial" }
+			],
+			"xs": 12,
+			"sm": 6,
+			"md": 4,
+			"lg": 3,
+			"xl": 3
+		},
+		"_headerDevices": {
+			"type": "header",
+			"text": "Devices",
+			"size": 3,
+			"newLine": true
+		},
+		"_hintDevices": {
+			"type": "staticText",
+			"text": "Enter the API key, then open the list to load the devices of your account. The adapter instance must be running.",
+			"newLine": true,
+			"xs": 12,
+			"sm": 12,
+			"md": 12,
+			"lg": 12,
+			"xl": 12
+		},
+		"devices": {
+			"type": "selectSendTo",
+			"label": "Devices to poll",
+			"command": "getDevices",
+			"jsonData": "{\"apiKey\": \"${data.apiKey}\"}",
+			"alsoDependsOn": ["apiKey"],
+			"multiple": true,
+			"manual": false,
+			"noTranslation": true,
+			"newLine": true,
+			"xs": 12,
+			"sm": 12,
+			"md": 8,
+			"lg": 6,
+			"xl": 6
+		}
+	}
+}
